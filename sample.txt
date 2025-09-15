@@ -1,0 +1,136 @@
+Day-Wise Plan for Job Portal MVP
+Day 1 – Backend Authentication & Role Management
+
+Goals: Make sure users and recruiters are authenticated and roles are properly enforced.
+
+Finish JWT auth for both users and recruiters
+
+Create role-based middleware:
+
+Users → can apply
+
+Recruiters → can create/delete jobs
+
+Test authentication on Postman
+
+Deliverables:
+
+userAuth.js & recruiterAuth.js middleware
+
+Protected routes for jobs & applications
+
+Day 2 – Job & Application Core Functionality
+
+Goals: Ensure jobs and applications work as expected.
+
+Fix job route params (/jobId instead of /userId)
+
+Users can apply to jobs (already done)
+
+Recruiters can see applicants for their jobs only
+
+Prevent duplicate applications
+
+Add timestamps to jobs & applications
+
+Deliverables:
+
+Fully functional backend for jobs and applications
+
+API tested on Postman
+
+Day 3 – User & Recruiter Profile Management
+
+Goals: Allow basic profile editing and resume upload.
+
+Users: update skills, experience, projects, education
+
+Upload resume (file or URL)
+
+Recruiters: update company info, designation, social links
+
+Add input validation (Joi or express-validator)
+
+Deliverables:
+
+Routes for profile update
+
+Basic validation in backend
+
+Day 4 – Job Listing Enhancements
+
+Goals: Make jobs more usable and searchable.
+
+Add search & filter: title, location, skills, employment type
+
+Add sort: newest first, deadline approaching
+
+Only show active jobs (filter past lastDateToApply)
+
+Deliverables:
+
+API returns filtered and sorted job lists
+
+Tested with multiple jobs
+
+Day 5 – Application Management & Status
+
+Goals: Track applications efficiently.
+
+Recruiters can accept/reject applicants
+
+Users can see application status
+
+Optional: notifications via console or email
+
+Deliverables:
+
+Application status update routes
+
+Users can fetch their applied jobs with status
+
+Recruiters can fetch applicants per job
+
+Day 6 – Frontend MVP
+
+Goals: Connect backend to a simple UI.
+
+Basic React or Next.js app
+
+Job listing page with Apply button
+
+Recruiter dashboard: list jobs, see applicants
+
+User dashboard: view applied jobs & status
+
+Deliverables:
+
+Functional frontend for MVP
+
+Test one-click apply end-to-end
+
+Day 7 – Testing, Bug Fixes & Deployment
+
+Goals: Final polish and deployment.
+
+Test all APIs thoroughly
+
+Fix bugs or edge cases
+
+Add README for instructions
+
+Deploy backend (Heroku, Railway) and frontend (Vercel, Netlify)
+
+Deliverables:
+
+Fully working MVP
+
+Live demo ready for users
+
+💡 Tip:
+
+Focus Day 1–5 on backend, then Day 6–7 on frontend & polish.
+
+Keep the frontend simple for MVP; you can improve UI later.
+
+You can add extra “nice-to-have” features after Day 7.
