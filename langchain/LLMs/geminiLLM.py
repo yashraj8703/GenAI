@@ -1,0 +1,8 @@
+from langchain_google_genai import ChatGoogleGenerativeAI
+import os
+from dotenv import load_dotenv
+load_dotenv()
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+
+response = llm.invoke("what is the capital of india?")
+print(response.content)
